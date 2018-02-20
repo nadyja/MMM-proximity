@@ -17,7 +17,7 @@ modules: [
 
 The code for the Arduino is in the `proximity.ino` file. When a user is detected the information is sent via serial (USB connected to the MM host).
 
-The message is recieved by `node_helper.js` and passed on via socket to the main module file which displays the appropriate greeting.
+The message is recieved by `node_helper.js` and passed on via socket to the main module file `MMM-proximity.js` which displays the appropriate greeting.
 
 
 TODO: the library `serialport` which listens to the messages on serial, seems to crash the whole app, so this needs to be investigated.
